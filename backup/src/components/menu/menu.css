@@ -1,0 +1,28 @@
+.navbar{
+    background: rgb(184, 5, 5);
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    padding-top: 5%;
+    width: 250px;
+}
+.list{
+    list-style-type: none;
+    margin: 30px 0 0 0 ;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.list__item{
+    margin: 5px 0;
+    padding: 5px 0;
+    color: white;
+    font-weight: bold;
+}
+.list__item:hover{
+    background: #e94e1b; 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
