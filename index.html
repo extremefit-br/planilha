@@ -29,8 +29,7 @@
 
 <div class="container">
 
-
-  
+ 
 <div>
 	.
 </div>
@@ -60,13 +59,28 @@
     </tr>
   </thead>
   <tbody>
+
+		<script>
+			function calcular() {
+			var cod1 = parseFloat(document.getElementById('cod1').value,10);
+			var cod2 = parseFloat(document.getElementById('cod2').value,10);
+			var cod3 = parseFloat(document.getElementById('cod3').value,10);
+			var cod4 = parseFloat(document.getElementById('cod4').value,10);
+			var cod5 = parseFloat(document.getElementById('cod5').value,10);
+
+			document.getElementById('resultado').value = cod1 + cod2 + cod3 + cod4 + cod5;
+			}
+			
+
+		</script>
     <tr>
-      <th scope="row"> <input type="number" name="" class="form-control" value="0"></th>
-      <td><input type="number" name="" class="form-control"  value="42"></td>
-      <td><input type="number" name="" class="form-control"  value="1"></td>
-      <td><input type="number" name="" class="form-control"  value="0"></td>
-      <td><input type="number" name="" class="form-control"  value="3"></td>
-      <td><input type="number" name="" class="form-control"  value="46"></td>
+      <th scope="row"> <input type="number" name="" class="form-control" value="0" id="cod1"></th>
+      <td><input type="number" name="" class="form-control"  value="42" id="cod2"></td>
+      <td><input type="number" name="" class="form-control"  value="1" id="cod3"></td>
+      <td><input type="number" name="" class="form-control"  value="0" id="cod4"></td>
+      <td><input type="number" name="" class="form-control"  value="3" id="cod5" onblur="calcular()"></td>
+			<td><input type="number" name="" class="form-control"  value="" id="resultado"></td>
+			
     </tr>
          
   </tbody>
